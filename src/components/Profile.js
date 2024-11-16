@@ -13,7 +13,7 @@ const Profile = () => {
         Mathan Kumar
       </Typography>
       <Typography variant="body1" color="text.secondary">
-        Affiliate Marketing Expert | Frontend Developer
+        Affiliate Marketing | Frontend Developer
       </Typography>
     </Box>
   );
