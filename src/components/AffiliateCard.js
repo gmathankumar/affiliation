@@ -10,8 +10,9 @@ import {
   Box,
   IconButton,
   styled,
+  Avatar,
 } from '@mui/material';
-import { ExpandMore as ExpandMoreIcon, ContentCopy as ContentCopyIcon } from '@mui/icons-material';
+import { ExpandMore as ExpandMoreIcon, ContentCopy as ContentCopyIcon } from '@mui/icons-material'
 
 const StyledExpandMore = styled(IconButton)(({ theme }) => ({
   transform: 'rotate(0deg)',
@@ -24,7 +25,7 @@ const StyledExpandMore = styled(IconButton)(({ theme }) => ({
   },
 }));
 
-const AffiliateCard = ({ title, description, ctaText, ctaLink, code, instructions }) => {
+const AffiliateCard = ({ title, amount, description, ctaText, ctaLink, code, instructions, validUntil }) => {
   const [expanded, setExpanded] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -62,7 +63,32 @@ const AffiliateCard = ({ title, description, ctaText, ctaLink, code, instruction
         },
       }}
     >
-      <CardHeader title={title} />
+      <CardHeader
+        avatar={
+          <Avatar 
+            sx={{ 
+              bgcolor: 'primary.main',
+              width: 48,
+              height: 48,
+              fontSize: '1.25rem'
+            }}
+          >
+            £{amount}
+          </Avatar>
+        }
+        title={title}
+        subheader={validUntil ? `Valid until ${formatValidUntil(validUntil)}` : 'No expiration date'}
+        sx={{
+          '& .MuiCardHeader-content': {
+            overflow: 'hidden',
+            '& .MuiCardHeader-title': {
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis'
+            }
+          }
+        }}
+      />
       <CardContent>
         <Typography 
           variant="body1" 

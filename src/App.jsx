@@ -6,7 +6,6 @@ import {
   Box,
   IconButton,
   ThemeProvider,
-  useTheme,
 } from '@mui/material';
 import { Brightness4, Brightness7 } from '@mui/icons-material';
 import { lightTheme, darkTheme } from './theme/theme';
@@ -18,7 +17,6 @@ import { affiliateData } from './models/affiliateData';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const theme = useTheme();
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
@@ -55,6 +53,7 @@ const App = () => {
             sx={{
               display: 'flex',
               flexWrap: 'wrap',
+              mt: 4,
               gap: 3,
               justifyContent: {
                 xs: 'center',
