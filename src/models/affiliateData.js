@@ -16,6 +16,7 @@ export const affiliateData = [
       instructions: [
         { text: "Copy the code above" },
         { text: "Download the Vance app from the app or play store" },
+        { text: "Or visit the website", link: "https://vanceapp.co.uk" },
         { text: "Paste the code when creating account to receive your discount" }
       ],
       code: "C9QPT3",
