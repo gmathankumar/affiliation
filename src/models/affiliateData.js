@@ -44,5 +44,16 @@ export const affiliateData = [
     { text: "Follow the instructions to switch." }
     ],
     ctaText: "Switch Now"
+  },
+  {
+    title: "Wise Money Transfer",
+    amount: 0,
+    description: "Avail your first transfer up to £500 to India without any fees.",
+    ctaLink: "https://share.octopus.energy/mist-cliff-236",
+    instructions: [
+    { text: "Sign up using the provided link." },
+    { text: "Follow the instructions to switch." }
+    ],
+    ctaText: "Transfer now"
   }
   ];
