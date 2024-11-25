@@ -24,15 +24,11 @@ export const affiliateData = [
     code: "C9QPT3",
   },
   {
-    title: "1pmobile",
-    amount: 5,
-    description: "Get £5 credit when you buy. Enjoy full access to the EE 5G network with no throttling. Various bundles are available.",
-    instructions: [
-    { text: "Copy the code above." },
-    { text: "Visit the website", link: "https://1pmobile.com/friends" },
-    { text: "Enter the copied code." }
-    ],
-    code: "K377284M",
+    title: "TopCashback",
+    amount: 10,
+    description: "Get a £10 Sign Up Bonus when you earn £10 payable cashback.",
+	ctaLink: "https://www.topcashback.co.uk/ref/kkirthu",
+    ctaText: "Shop Now"
   },
   {
     title: "Octopus Energy",
