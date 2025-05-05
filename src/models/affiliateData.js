@@ -12,13 +12,13 @@ export const affiliateData = [
     ctaText: "Shop Now"
   },
   {
-    title: "Vance",
+    title: "Aspora",
     amount: 50,
     description: "Receive a £50 welcome bonus and a free transfer to India when you transfer £1,000 or more.",
     instructions: [
     { text: "Copy the code above." },
     { text: "Download the Vance app from the App Store or Google Play Store." },
-    { text: "Or visit the website", link: "https://www.vance.tech/uk" },
+    { text: "Or visit the website", link: "https://link.aspora.com/DYot/C9QPT3" },
     { text: "Paste the code when creating your account to receive the discount." }
     ],
     code: "C9QPT3",
