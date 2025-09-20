@@ -51,5 +51,12 @@ export const affiliateData = [
     { text: "Follow the instructions to switch." }
     ],
     ctaText: "Transfer now"
-  }
+  },
+  {
+    title: "Yolla - Cheap VOIP",
+    amount: 3,
+    description: "When you sign up and makes a purchase using the referral link, both of us will receive $3 in credits.",
+	ctaLink: "https://yolla.im/X0YLDJ",
+    ctaText: "Make a call"
+  },
   ];
